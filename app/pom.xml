@@ -389,6 +389,18 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--  integrate maven-cobertura-plugin to project site  -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>${cobertura.version}</version>
+                <configuration>
+                    <formats>
+                        <format>xml</format>
+                    </formats>
+                    <check/>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <reporting>
