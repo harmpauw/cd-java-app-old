@@ -11,6 +11,7 @@ node {
   stash name: 'config', includes: 'config/**'
   stash name: 'db', includes: 'db/**'
 }
+//test
 
 stage 'QA'
 deploy 'test'
